@@ -1,0 +1,52 @@
+
+div {
+margin: 12px 16px 10px 4px; /* Margem no topo, direita, em baixo, esquerda*/
+margin: 12px 16px 0;/*margem do topo, margens laterais e margem de baixo*/
+margin: 8px 16px; /*margens do topo e em baixo, margens laterais*/
+margin:8px; /*margens em todos os lados*/
+}
+
+
+.Classe{
+    padding: 12px 16px 10px 4px; /* Margem interna no topo, direita, em baixo, esquerda*/
+    padding: 12px 16px 0;/*margem interna do topo, margens laterais e margem de baixo*/
+    padding: 8px 16px; /*margens interna do topo e em baixo, margens laterais*/
+    padding:8px; /*margens interna em todos os lados*/
+
+}
+
+/*Neste caso pega o primeiro filho, ou seja o primeiro elemento e coloca negrito*/
+ul li:first-child{
+    font-weight: bold;
+  }
+
+
+/*Neste caso pega o segundo elemento do mesmo tipo e coloca 18 no tamanho e negrito*/  
+  article p:nth-of-type(2){
+    font-size:18px;
+    font-weight: bold;  
+  }
+
+  /*Formatação de fonte básica*/
+  p{
+      font-family: "Times New Roman", sans-serif;
+      font-weight: normal;
+      font-style: oblique;
+      font-size: 12px;
+      text-align: center;
+  }
+
+  /*Espaçamento entre linhas*/
+  p{
+      line-height: 1.6;
+  }
+
+  /*Posicionamento relativo-->
+  Quando fizer o left ele vai andar 100px a partir da esquerda e 80px
+  do topo não afetando na posição dos demais objetos*/
+
+  .box1 {
+        position:relative;
+        left: 100px;
+        top: 80px;
+  }

@@ -1,0 +1,28 @@
+/*FLEXBOX
+É uma caixa que se torna flex, fazendo com que os elementos internos
+possam receber melhor:
+- alinhamento
+- ordenação
+- tamanhos flexíveis
+*/
+
+/*Grid, aplicando ao elemento pai*/
+body{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-rows: 30px 1fr 40px; /*30 no topo, 1fração no main e 40 no rodapé */   
+}
+
+/*Para usar*/
+header{
+    grid-area: header;
+}
+
+/*====================================================*/
+.container{
+    display: flex;
+    border: 1px solid red;
+}
